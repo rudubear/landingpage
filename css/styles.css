@@ -1,5 +1,7 @@
 * {
     text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: antiquewhite
 }
 
 body {
@@ -7,8 +9,83 @@ body {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    background-image: url('../img/backgrounds/salmen-bejaoui-uXTozY3CcQg-unsplash.jpg');
+    background-size: cover;
+    margin: 0px;
 }
 
 .content {
     flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items:normal;
+    justify-content: space-between;
+}
+
+.leo_blurb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.leo_header{
+    font-size: 32px;
+    margin: 8px;
+}
+
+.intro button {
+    background-color: rgb(8,46,63);
+    width: 200px;
+    border-radius: 25px;
+}
+
+.intro {
+    display: flex;
+    background-color: rgba(19, 41, 115, 0.9);
+    padding: 8px;
+    border: solid darkslategray;
+    justify-content: center;
+    margin: 50px auto;
+    align-items: center;
+}
+
+.intro img {
+    border: 2px solid black;
+    box-shadow: 2px 2px 8px -2px lightblue;
+}
+
+header {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(8, 46, 63, 0.9);
+    color: antiquewhite;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+}
+
+.header-right {
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+}
+
+footer {
+    background-color: rgba(8, 46, 63, 0.9);
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
