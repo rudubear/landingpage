@@ -37,6 +37,7 @@ body {
 .intro button {
     background-color: rgb(8,46,63);
     width: 200px;
+    height: 30px;
     border-radius: 25px;
 }
 
@@ -71,6 +72,32 @@ header {
     padding: 8px;
 }
 
+.feats{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(106, 70, 4, 0.9);
+    gap: 24px;
+    padding: 24px;
+}
+
+.item {
+    width: 260px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.item img,
+.item video,
+.item div {
+    width: 240px;
+    height: 160px;
+    object-fit:cover;
+    border: solid chocolate 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+}
+
 .header-right {
     display: flex;
     gap: 8px;
@@ -79,13 +106,58 @@ header {
 
 footer {
     background-color: rgba(8, 46, 63, 0.9);
-    height: 32px;
+    height: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+footer p {
+    margin: 0px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
+}
+
+
+.leolightdark{
+    background: url(../img/leo/lighting_leo_light.webp) no-repeat;
+    background-size:cover;
+
+}
+
+.leolightdark:hover {
+    background: url(../img/leo/lighting_leo_dark.webp) no-repeat;
+    background-size: cover;
+    
+}
+
+.calltoaction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: rgba(166, 170, 233,0.5);
+    font-size: 24px;
+    text-shadow: 2px 2px 2px black;
+    text-align: right;
+}
+
+.leoquote{
+    width: 600px;
+}
+
+.leoquotecredit p {
+    text-align: right;
+}
+
+.calltoaction button {
+    background-color: rgb(8,46,63);
+    width: 600px;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 24px;
 }
